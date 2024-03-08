@@ -9,6 +9,15 @@ Original file is located at
 
 import numpy as np
 from scipy.misc import derivative
+f = lambda x: x
+interv = ("1,1")
+tol = 0.001
+TOL = 0.001
+n0 = 100
+p0 = 0.1
+max_iter = 100
+x0 = 1
+x1 = 1
 
 def biseccion(f, interv, tol, n0):
       a, b = map(float, interv.split(','))
