@@ -1,4 +1,3 @@
-import numpy as np
 from scipy.misc import derivative
 #derivative(f,x0) <- derivada de la función en un punto x0
 
