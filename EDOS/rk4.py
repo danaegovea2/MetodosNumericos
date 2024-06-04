@@ -13,14 +13,3 @@ def runge_kutta(x0, y0, xn, n, f): # x0, y0: intrvalo, xn: valor inicial, n: nú
         k4 = h * f(x3[i] + h, y3[i] + k3)
         y3[i+1] = y3[i] + (k1 + 2*k2 + 2*k3 + k4)/6
     return x3, y3
-
-x3, y3 = runge_kutta(x0, y0, xn, n, f)
-# print(runge_kutta)
-
-# Gráfica
-plt.plot(x3, y3, '*-')
-plt.title('Runge-Kutta')
-plt.xlabel('x')
-plt.ylabel('y')
-plt.grid(True)
-plt.show()
