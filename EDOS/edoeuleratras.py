@@ -11,11 +11,3 @@ def eulerbckw(f, a, b, y0, n): # a, b: límites del intervalo, f: función, y0: 
         y2[i] = y2[i-1] + h * f(xi, yf)   # Corregir usando la nueva estimación
     return(x2, y2)
 
-x2, y2 = eulerbckw(f, a, b, y0, n)
-# print(eulerbckw)
-plt.plot(x2, y2)
-plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Euler implícito')
-plt.grid(True)
-plt.show()
