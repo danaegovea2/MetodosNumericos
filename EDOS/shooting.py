@@ -35,26 +35,3 @@ def ivp_rk4(f, x0, y0, z0, h, x_end):
         z_values.append(z_new)
     
     return x_values, y_values
-
-# Condiciones iniciales
-x0 = 0
-y0 = 0
-z0 = 1
-
-# Paso de integración
-h = 0.01
-
-# Punto final para la integración
-x_end = 1
-
-# Resolución del IVP
-x_values, y_values = ivp_rk4(sistema, x0, y0, z0, h, x_end)
-
-# Visualización de la solución
-plt.plot(x_values, y_values, label='Solución aproximada')
-plt.xlabel('x')
-plt.ylabel('y(x)')
-plt.title('Solución de la EDO con condiciones iniciales')
-plt.legend()
-plt.grid(True)
-plt.show()
