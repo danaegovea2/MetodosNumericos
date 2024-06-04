@@ -1,4 +1,5 @@
 # Usando los polinoomios de Legendre
+# Utilizar tus propios datos
 
 import numpy as np
 
